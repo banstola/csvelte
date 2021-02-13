@@ -804,6 +804,9 @@ class Taster
         } elseif (preg_match('/^[a-zA-Z]+$/', $data)) {
             return self::TYPE_ALPHA;
         }
+
+        return self::TYPE_STRING;
+
         try {
             $year  = '([01][0-9])?[0-9]{2}';
             $month = '([01]?[0-9]|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)';
